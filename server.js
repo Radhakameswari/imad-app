@@ -1,36 +1,30 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
+var express = require('express');	var express = require('express');
+var morgan = require('morgan');	var morgan = require('morgan');
+var path = require('path');	var path = require('path');
 
-var app = express();
-app.use(morgan('combined'));
+var app = express();	var app = express();
+app.use(morgan('combined'));	app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+app.get('/', function (req, res) {	app.get('/', function (req, res) {
+res.sendFile(path.join(dirname, 'ui', 'index.html'));	res.sendFile(path.join(dirname, 'ui', 'index.html'));
+});	});
 
-app.get('/article-one', function  (req, res){
-    res.send("Article one requested and will be served here");
-});
++app.get('/ArticleOne', function (req, res) {
++ res.sendFile(path.join(__dirname, 'ui', 'ArticleOne.html'));
++});
++
+app.get('/ui/style.css', function (req, res) {	app.get('/ui/style.css', function (req, res) {
+res.sendFile(path.join(dirname, 'ui', 'style.css'));	res.sendFile(path.join(dirname, 'ui', 'style.css'));
+});	});
 
-app.get('/article-two', function  (req, res){
-    res.send("Article two requested and will be served here");
-});
+app.get('/ui/madi.png', function (req, res) {	app.get('/ui/madi.png', function (req, res) {
+res.sendFile(path.join(dirname, 'ui', 'madi.png'));	res.sendFile(path.join(dirname, 'ui', 'madi.png'));
+});	});
 
-app.get('/article-three', function  (req, res){
-    res.send("Article three requested and will be served here");
-});
+// Do not change port, otherwise your app won't run on IMAD servers	// Do not change port, otherwise your app won't run on IMAD servers
+// Use 8080 only for local development if you already have apache running on 80	// Use 8080 only for local development if you already have apache running on 80
 
-app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
-});
-
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-});
-
-
-var port = 8080; // use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
-  console.log(`IMAD course app listening on port ${port}!`);
+var port = 80;	
+app.listen(port, function () {	app.listen(port, function () {
+console.log(IMAD course app listening on port ${port}!);	console.log(IMAD course app listening on port ${port}!);
 });
