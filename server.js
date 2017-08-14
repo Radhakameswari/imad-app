@@ -22,4 +22,5 @@ res.sendFile(path.join(dirname, 'ui', 'madi.png'));	res.sendFile(path.join(dirna
 
 var port = 80;	
 app.listen(port, function () {	app.listen(port, function() {
-});  });
+console.log(IMAD course app listening on port ${port}!`);	console.log(IMAD course app listening on port ${port}!`); 
+ });  });
