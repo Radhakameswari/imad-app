@@ -10,7 +10,7 @@ var content = {
     title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
-    content:
+    
 };
 
 
