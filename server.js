@@ -10,7 +10,7 @@ var content = ` {
     title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
-    content: ''
+    content: '
      <p>  ;
                This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.  
           </p>
@@ -19,7 +19,7 @@ var content = ` {
             </p>
              <p>
                  This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
-        </p>
+        </p> '
       };
 
 function createTemplate (data) {
@@ -89,6 +89,6 @@ app.get('/ui/madi.png', function (req, res) {
 // Use 8080 only for local development if you already have apache running on 80
 
 var port = 80;
-app.listen(port, function () {
+app.listen(port, function () { 
   console.log(`IMAD course app listening on port ${port}!`);
 });
