@@ -11,15 +11,7 @@ var content = {
     heading: "Article One",
     date: ' Aug 20, 2017',
     content: ''
-    <p>
-    This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>
-             <p>
-         This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>
-             <p>
-         This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>'
+   
 };
 
 app.get('/', function (req, res) {
