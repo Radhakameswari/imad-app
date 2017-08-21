@@ -6,20 +6,20 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content =  {
+var content = ` {
     title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
     content: ''
-           <p>
-              { This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.}
+     <p>  ;
+               This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.  
+          </p>
+             <p>  ;
+                 This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
             </p>
              <p>
-               { This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.}
-             </p>
-             <p>
-             {  This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. }
-            </p>
+                 This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. 
+        </p>
    
       };
 
