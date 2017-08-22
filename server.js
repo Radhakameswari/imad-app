@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var content = `{
+var articleone = `{
     title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
@@ -58,6 +58,7 @@ var htmlTemplate = `
 </html>
 
 `;
+  return htmlTemplate;
     }
 
 app.get('/', function (req, res) {
@@ -73,7 +74,7 @@ app.get('/article-two', function  (req, res){
 });
 
 app.get('/article-three', function  (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createTemplate(articleone));
 });
 
 app.get('/ui/style.css', function (req, res) {
