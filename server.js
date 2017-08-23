@@ -6,8 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articles = {
-    articleOne:`{
+var content = `{
     title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
@@ -20,27 +19,7 @@ var articles = {
              <p>
                 This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
             </p>'
-    }`,
-    articleTwo:`{
-    title: " Article Two I Meghana",
-    heading: "Article Two",
-    date: ' Aug 20, 2017',
-    content: '         
-    <p>
-                This is the content for my second article.
-            </p>`
-    };
-    articleThree:`{
-    title: " Article Three I Meghana",
-    heading: "Article Three",
-    date: ' Aug 25, 2017',
-    content: '         
-    <p>
-                This is the content for my second article.
-            </p>`;
-    }`;
 }`;
-
 
 
 function createTemplate (data) {
@@ -62,7 +41,7 @@ var htmlTemplate = `
             <body>
     <div class="container">
             <div>
-           <a href="/">Home</a>
+            <a href="/">Home</a>
             </div>
             <hr/>
             <h3>
@@ -77,9 +56,7 @@ var htmlTemplate = `
         </div>
     </body>
 </html>
-
 `;
-  return htmlTemplate;
     }
 
 app.get('/', function (req, res) {
@@ -87,17 +64,16 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function  (req, res){
-     res.send(createTemplate(articleone));
-    });
+     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+});
 
 app.get('/article-two', function  (req, res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
-app.get('/article-three', function  (req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+app.get('/article-three', function (req, res){
+    res.sendFile(path.join(__dirname, 'ui', 'article-three.html')); 
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
