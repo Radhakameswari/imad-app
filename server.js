@@ -20,24 +20,6 @@ var articleOne ; `{
                 This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
             </p>'
 }`;
- articleTwo ; `{
-      title: " Article Two I Meghana",
-    heading: "Article Two",
-    date: ' Aug 20, 2017',
-    content: '           
-                <p>
-                This is the content for my second article.
-                </p> 
- }`;
- articleThree ; `{ 
-    title: " Article Three I Meghana",
-    heading: "Article Three",
-    date: ' Aug 25, 2017',
-    content: '           
-                <p>
-                This is the content for my third article.
-                </p> 
- }`;
 
 
 function createTemplate (data) {
