@@ -6,21 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 
-var articleOne ; `{
-    title: " Article One I Meghana",
+var articles = ` {  } ;
+   articleOne : `{ }`;
+   articleTwo : `{ 
+  title: " Article One I Meghana",
     heading: "Article One",
     date: ' Aug 20, 2017',
-    content: '              <p>
-                This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>
-             <p>
-                This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-            </p>
-             <p>
-                This is the content for my first article.  This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
+    content: '  
+            <p>
+                This is the content for my first article.
             </p>'
-}`;
 
+ }; 
+  
 
 function createTemplate (data) {
    var title = data.title;
@@ -30,15 +28,13 @@ function createTemplate (data) {
    
 var htmlTemplate = `
 <html>
-    <head>
+   <head>
         <title>
            ${title}
-    </title>
       <meta name="viewport" content="width-device-width, initial-scale=1" />
       <link href="/ui/style.css" rel="stylesheet" />
-      
- </head>
-            <body>
+  </head> 
+             <body>
     <div class="container">
             <div>
             <a href="/">Home</a>
