@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 var articles = 
 {
      'article-one'   : {
-    title: 'Article One - Shady Dude',
+    title: 'Article One I Meghana',
     heading: 'Article One',
     date: "Aug 5. 2017",
     content: `
@@ -25,9 +25,9 @@ var articles =
                         },
      
      'article-two'   : {
-    title: 'Article Two - Shady Dude',
+    title: 'Article Two I Meghana',
     heading: 'Article Two',
-    date: "Aug 5. 2017",
+    date: "Aug 20. 2017",
     content: `
             <p>
                     This is The Content For My Second Article. Alrighty ? I'mma Copy This A Bunch Of Times So Don't Go Reading Everything Again And Again Till You Go Crazy. Wait, Have You Already Gone Crazy ? Uh . . . Huh I Don't Think So Righty ? Then . . . Bye Bye ! *Wave*  . . . . . . . . . 
@@ -43,9 +43,9 @@ var articles =
                         },
      
      'article-three' : {
-    title: 'Article Three - Shady Dude',
+    title: 'Article Three I Meghana',
     heading: 'Article Three',
-    date: "Aug 5. 2017",
+    date: "Aug 25. 2017",
     content: `
             <p>
                     This is The Content For My Third Article. Alrighty ? I'mma Copy This A Bunch Of Times So Don't Go Reading Everything Again And Again Till You Go Crazy. Wait, Have You Already Gone Crazy ? Uh . . . Huh I Don't Think So Righty ? Then . . . Bye Bye ! *Wave*  . . . . . . . . . 
